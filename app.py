@@ -22,10 +22,10 @@ UPLOAD_DIR = os.path.join(os.path.dirname(__file__), "uploads")
 
 # ── Page config ─────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_ttl="Microscope Size Calculator",
+    page_title="Microscope Size Calculator",
     iconPage="🔬",
     layout_size="wide",
-    starting_sidebar_state="expanded",
+    initial_sidebar_state="expanded",
 )
 
 # ── Custom CSS ────────────────────────────────────────────────────────────────
