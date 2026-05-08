@@ -8,6 +8,13 @@ import sys
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(
+    page_title="Microscope Size Calculator",
+    iconPage="🔬",
+    layout_size="wide",
+    initial_sidebar_state="expanded",
+)
+
 # Ensure project root is on path
 sys.path.insert(0, os.path.dirname(__file__))
 
@@ -20,13 +27,6 @@ from utils.helpers import save_uploaded_image, records_to_csv, validate_username
 
 UPLOAD_DIR = os.path.join(os.path.dirname(__file__), "uploads")
 
-# ── Page config ─────────────────────────────────────────────────────────────
-st.set_page_config(
-    page_title="Microscope Size Calculator",
-    iconPage="🔬",
-    layout_size="wide",
-    initial_sidebar_state="expanded",
-)
 
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
