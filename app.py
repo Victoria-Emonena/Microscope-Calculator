@@ -3,17 +3,18 @@ app.py — Microscope Specimen Size Calculator
 A production-ready Streamlit application for CSC 442 Project 1.
 """
 
-import os
-import sys
 import streamlit as st
-from PIL import Image
 
 st.set_page_config(
     page_title="Microscope Size Calculator",
-    iconPage="🔬",
-    layout_size="wide",
+    page_icon="🔬",
+    layout="wide",
     initial_sidebar_state="expanded",
 )
+
+import os
+import sys
+from PIL import Image
 
 # Ensure project root is on path
 sys.path.insert(0, os.path.dirname(__file__))
